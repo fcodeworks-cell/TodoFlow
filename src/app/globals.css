@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --background: #060e0c;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-Playfair: var(--font-Playfair);
+  --font-Cinzel: var(--font-Cinzel);
+  --breakpoint-2xl: 120rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #060e0c;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-Playfair);
+}
+h2 {
+  font-family: var(--font-Cinzel);
+}
+.textStroke {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(152, 251, 32);
+}
+.textStroke2 {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(248, 72, 72);
+}
+.tag-urgent {
+  background: linear-gradient(to bottom right, #f87171, #7f1d1d, #f87171);
+  color: white;
+  font-weight: bold;
+}
+.tag-work {
+  background: linear-gradient(to bottom right, #c084fc, #3b0764, #c084fc);
+  color: white;
+  font-weight: bold;
+}
+.tag-personal {
+  background: linear-gradient(to bottom right, #a3e635, #1a2e05, #a3e635);
+  color: white;
+  font-weight: bold;
+}
+.tag-health {
+  background: linear-gradient(to bottom right, #f472b6, #500724, #f472b6);
+  color: white;
+  font-weight: bold;
+}
